@@ -7,9 +7,9 @@ MAINTAINER joffrey origingod.oh@gmail.com
 
 VOLUME ["/data"]
 
-RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+#RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 
-ADD http://mirrors.163.com/.help/CentOS6-Base-163.repo /etc/yum.repos.d/CentOS6-Base-163.repo
+#ADD http://mirrors.163.com/.help/CentOS6-Base-163.repo /etc/yum.repos.d/CentOS6-Base-163.repo
 
 RUN yum clean all
 RUN yum makecache
